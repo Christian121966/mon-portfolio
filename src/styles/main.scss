@@ -1,0 +1,33 @@
+// src/styles/main.scss
+
+// Import des abstracts
+@import '../styles/abstracts/variables';
+@import '../styles/abstracts/mixins';
+@import '../styles/abstracts/functions';
+
+// Import des bases
+@import '../styles/base/reset';
+@import '../styles/base/typography';
+@import '../styles/base/utilities';
+
+// Import des layouts
+@import '../styles/layout/grid';
+@import '../styles/layout/layout';
+
+// Import des composants
+@import '../components/Header/Header.scss';
+@import '../components/Footer/Footer.scss';
+@import '../components/About/About.scss';
+@import '../components/Projects/Projects.scss';
+@import '../components/Contact/Contact.scss';
+
+// Import des vendors
+@import '../styles/vendors/bootstrap';
+
+// Import des pages
+@import '../pages/HomePage/HomePage.scss';
+@import '../pages/AboutPage/AboutPage.scss';
+@import '../pages/ProjectsPage/ProjectsPage.scss';
+@import '../pages/ContactPage/ContactPage.scss';
+
+

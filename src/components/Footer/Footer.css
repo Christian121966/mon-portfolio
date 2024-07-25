@@ -1,0 +1,10 @@
+p.footer__text {
+  color: white;
+  text-align: center;
+  padding: 10px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+}/*# sourceMappingURL=Footer.css.map */

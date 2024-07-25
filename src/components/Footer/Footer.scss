@@ -1,0 +1,11 @@
+@import '../../styles/abstracts/variables';
+@import '../../styles/abstracts/mixins';
+
+p.footer__text {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background-color: $primary-color;
+    @include flex-center;
+    font-size: 0.9rem;
+}

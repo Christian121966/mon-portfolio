@@ -1,0 +1,10 @@
+@import '../../styles/abstracts/variables';
+@import '../../styles/abstracts/mixins';
+
+.about {
+    @include flex-center;
+    flex-direction: column;
+    height: 16vh;
+    width: 100vw;
+    color: $primary-color;
+}

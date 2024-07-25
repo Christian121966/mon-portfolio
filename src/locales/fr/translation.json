@@ -1,0 +1,18 @@
+{
+  "welcome": "Bienvenue dans mon portfolio",
+  "introduction": "Je suis Christian Boissy",
+  "profession": "Je suis un développeur front-end",
+  "about": "À propos",
+  "socials": "Réseaux sociaux",
+  "projects": "Projets",
+  "contact": "Contact",
+  "sendMail": "Envoyez-moi un e-mail",
+  "callMe": "Appelez-moi",
+  "about_me": "À propos de moi",
+  "about_description": "Ceci est la page à propos.",
+  "about_text": "Fort de plus de 15 ans d'expérience dans le domaine de la livraison, j'ai entrepris une reconversion professionnelle pour devenir développeur web, motivé par le désir de créer des solutions technologiques adaptées à mon ancien métier. Actuellement en formation avec OpenClassrooms, je suis passionné par l'apprentissage des nouvelles technologies et par l'acquisition de compétences techniques.",
+  "contact_page": "Page de contact",
+  "contact_description": "Ceci est la page de contact.",
+  "projects_page": "Mes Projets",
+  "projects_description": "Ceci est la page des projets."
+}

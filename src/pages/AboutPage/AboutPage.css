@@ -1,0 +1,9 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 16vh;
+  width: 100vw;
+  color: #000;
+}/*# sourceMappingURL=AboutPage.css.map */

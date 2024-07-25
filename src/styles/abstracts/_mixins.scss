@@ -1,0 +1,16 @@
+// src/styles/abstracts/_mixins.scss
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin responsive-font-size($size) {
+    font-size: $size;
+  
+    @media (max-width: 600px) {
+      font-size: $size * 0.8;
+    }
+  }
+  
