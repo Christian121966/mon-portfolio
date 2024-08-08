@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/* Styles de base pour les petits écrans */
+.formation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px; /* Ajoutez du padding pour éviter que le contenu touche les bords */
+  height: auto; /* La hauteur est ajustée pour les petits écrans */
+}
+
+.card__title {
+  font-size: 1.5rem; /* Taille de police adaptée pour les petits écrans */
+  margin-bottom: 1rem;
+}
+
+.card_formation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%; /* Assurez-vous que la carte occupe toute la largeur disponible */
+}
+
+.module {
+  width: 85%;
+  max-width: 90%; /* Assurez-vous que le module est suffisamment large pour les petits écrans */
+  border: 1px solid #000;
+  background-color: #D2691E;
+  padding: 15px; /* Moins de padding pour les petits écrans */
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.module h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.module ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.module li {
+  margin-bottom: 1rem;
+}
+.module li strong {
+  font-size: 0.9rem;
+}
+
+.module p {
+  margin-top: 0.5rem;
+  color: #00F7F7;
+  font-size: 0.9rem;
+}
+
+/* Styles pour les écrans moyens et grands */
+@media (min-width: 600px) {
+  .card__title {
+    font-size: 1.8rem;
+  }
+  .module {
+    width: 80%;
+    max-width: 80%;
+    padding: 20px;
+  }
+  .module h3 {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .card__title {
+    font-size: 2rem;
+  }
+  .module {
+    width: 70%;
+    max-width: 70%;
+    padding: 20px;
+  }
+  .module h3 {
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 992px) {
+  .card__title {
+    font-size: 2.2rem;
+  }
+  .module {
+    width: 60%;
+    max-width: 600px; /* Largeur maximale pour les grands écrans */
+    padding: 20px;
+  }
+  .module h3 {
+    font-size: 1.8rem;
+  }
+}/*# sourceMappingURL=FormationPage.css.map */

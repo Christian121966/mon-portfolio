@@ -1,8 +1,19 @@
 .homepage {
   padding: 20px;
 }
-.homepage h2 {
+.homepage h1 {
   text-align: center;
+}
+.homepage .homepage__name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homepage .homepage__profession {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
 }
 .homepage .homepage__cards {
   display: grid;
@@ -16,8 +27,8 @@
   }
 }
 .homepage .homepage__cards .card {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
+  background-color: #E2DED1;
+  border: 1px solid #000;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -28,57 +39,58 @@
   border: 1px solid #000;
   border-radius: 35px;
 }
-.homepage .homepage__cards .card h3 a.propos__link {
+.homepage .homepage__cards .card a.propos__link {
   text-decoration: none;
   color: #000;
 }
-.homepage .homepage__cards .card h3 .fa-solid.fa-arrow-up-right-from-square {
+.homepage .homepage__cards .card .fa-solid.fa-arrow-up-right-from-square {
   position: relative;
-  left: 55px;
+  left: 10px;
+  color: #000;
   cursor: pointer;
 }
-.homepage .homepage__cards .card h3 .propos {
+.homepage .homepage__cards .card .propos {
   font-size: 0.9rem;
-  text-align: justify;
+  text-align: left;
   display: flex;
 }
-.homepage .homepage__cards .card .github {
+.homepage .github {
   position: relative;
   left: -35px;
   cursor: pointer;
 }
-.homepage .homepage__cards .card .linkedin {
+.homepage .linkedin {
   position: relative;
   left: 30px;
   cursor: pointer;
 }
-.homepage .homepage__cards .card .mail {
+.homepage .mail {
   border: 1px solid #000;
   border-radius: 35px;
   margin-bottom: 30px;
 }
-.homepage .homepage__cards .card .mail .contact__link {
+.homepage .mail .contact__link {
   position: relative;
   left: 45px;
   color: #000;
   cursor: pointer;
 }
-.homepage .homepage__cards .card .phone {
+.homepage .phone {
   border: 1px solid #000;
   border-radius: 35px;
 }
-.homepage .homepage__cards .card .phone .contact_phone__link {
+.homepage .phone .contact_phone__link {
   position: relative;
   left: 55px;
   color: #000;
   cursor: pointer;
 }
-.homepage .homepage__cards .card .contact__link, .homepage .homepage__cards .card .contact_phone__link {
+.homepage .contact__link, .homepage .contact_phone__link {
   margin-left: 10px;
   color: inherit;
   text-decoration: none;
 }
-.homepage .homepage__cards .card .contact_phone__link {
+.homepage .contact_phone__link {
   background: none;
   border: none;
   color: inherit;

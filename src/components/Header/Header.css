@@ -9,7 +9,7 @@
   align-items: end;
 }
 .header__link {
-  color: white;
+  color: #000;
   text-decoration: none;
 }
 .header__link:hover {

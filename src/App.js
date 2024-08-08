@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from '../src/pages/HomePage/HomePage';
 import AboutPage from '../src/pages/AboutPage/AboutPage';
+import FormationPage from '../src/pages/formationPage/FormationPage';
 import ProjectsPage from '../src/pages/ProjectsPage/ProjectsPage';
 import ContactPage from './pages/ContactPage/ContactPage';
 import Header from '../src/components/Header/Header';
@@ -14,6 +15,7 @@ function App() {
       <Routes>
       <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/formation" element={<FormationPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
