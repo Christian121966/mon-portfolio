@@ -5,12 +5,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 20px; /* Ajoutez du padding pour éviter que le contenu touche les bords */
-  height: auto; /* La hauteur est ajustée pour les petits écrans */
+  padding: 20px;
+  height: auto;
 }
 
 .card__title {
-  font-size: 1.5rem; /* Taille de police adaptée pour les petits écrans */
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
@@ -19,15 +19,15 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%; /* Assurez-vous que la carte occupe toute la largeur disponible */
+  width: 100%;
 }
 
 .module {
   width: 85%;
-  max-width: 90%; /* Assurez-vous que le module est suffisamment large pour les petits écrans */
+  max-width: 90%;
   border: 1px solid #000;
-  background-color: #D2691E;
-  padding: 15px; /* Moins de padding pour les petits écrans */
+  background-color: #d6d3cd;
+  padding: 15px;
   margin-bottom: 1.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -52,12 +52,14 @@
 }
 .module li strong {
   font-size: 0.9rem;
+  font-weight: 900;
 }
 
 .module p {
   margin-top: 0.5rem;
-  color: #00F7F7;
   font-size: 0.9rem;
+  color: #FFF;
+  font-style: italic;
 }
 
 /* Styles pour les écrans moyens et grands */
@@ -93,7 +95,7 @@
   }
   .module {
     width: 60%;
-    max-width: 600px; /* Largeur maximale pour les grands écrans */
+    max-width: 600px;
     padding: 20px;
   }
   .module h3 {

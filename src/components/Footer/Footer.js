@@ -8,7 +8,7 @@ function Footer() {
 
   return (
     <footer>
-      <p className="footer__text">© 2024 {t('© 2024 Christian Boissy.')} - {t('Tous droits réservés.')}</p>
+      <p className="footer__text"> {t('© 2024 Christian Boissy.')} - {t('Tous droits réservés.')}</p>
     </footer>
   );
 }

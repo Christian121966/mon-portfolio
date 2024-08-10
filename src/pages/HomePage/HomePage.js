@@ -27,35 +27,34 @@ const HomePage = () => {
     <div className="homepage">
       <header>
         <h1>{t('Mon Portfolio')}</h1>
-      </header>
-      <main>
         <span className="homepage__name">{t('Je suis Christian Boissy')}</span>
         <p className="homepage__profession">{t('Développeur web front-end')}</p>
+      </header>
+      <main>
+        
         <div className="homepage__cards">
           <div className="card">
             <h2>
-              {t('about')}
               <a href="/about" className="propos__link" aria-label="About page">
-                <i className="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                {t('A Propos de moi')}
               </a>
             </h2>
-            <span className="propos">
-              Bonjour, je suis un développeur et designer web français, vivant dans les Yvelines. Passionné par le développement web, j'adore explorer de nouvelles technologies web et je suis toujours en quête de nouvelles compétences.
-            </span>
+              <span className="propos">
+                Bonjour, je suis un développeur et designer web français, vivant dans les Yvelines. Passionné par le développement web, j'adore explorer de nouvelles technologies web et je suis toujours en quête de nouvelles compétences.
+              </span>
           </div>
           <div className="card">
             <h2>
-              {t('Formation')}
               <a href="/Formation" className="formation__link" aria-label="Formation">
-                <i className="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                {t('Formation')}
               </a>
             </h2>
           </div>
           <div className="card">
-            <h2>{t('projects')}</h2>
+            <h2>{t('projets')}</h2>
           </div>
           <div className="card">
-            <h2>{t('socials')}</h2>
+            <h2>{t('Réseaux sociaux')}</h2>
             <a href="https://github.com/votre-profil" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
               <img className="github" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/github.png" alt="GitHub" />
             </a>
@@ -66,15 +65,13 @@ const HomePage = () => {
           <div className="card">
             <h2>{t('contact')}</h2>
             <p className="mail">
-              {t('sendMail')}
               <a href="mailto:boissychristian@gmail.com" className="contact__link" aria-label="Send email">
-                <i className="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                {t('sendMail')}
               </a>
             </p>
             <p className="phone">
-              {t('callMe')}
               <button className="contact_phone__link" onClick={showPhoneNumber} aria-label="Show phone number">
-                <i className="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                {t('callMe')}
               </button>
             </p>
             {phoneNumberVisible && (

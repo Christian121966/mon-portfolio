@@ -68,92 +68,92 @@ p.footer__text {
 
 .homepage {
   padding: 20px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
 }
 .homepage h1 {
   text-align: center;
 }
-.homepage .homepage__name {
+.homepage header {
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-color: #E2DED1;
+}
+.homepage .homepage__name,
+.homepage .homepage__profession {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .homepage .homepage__profession {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .homepage .homepage__cards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 20px;
   margin-top: 20px;
-}
-@media (max-width: 768px) {
-  .homepage .homepage__cards {
-    grid-template-columns: 1fr;
-  }
 }
 .homepage .homepage__cards .card {
   background-color: #E2DED1;
   border: 1px solid #000;
   border-radius: 10px;
-  padding: 20px;
+  padding: 15px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 .homepage .homepage__cards .card h3 {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   border: 1px solid #000;
   border-radius: 35px;
 }
+.homepage .homepage__cards .card a.formation__link,
 .homepage .homepage__cards .card a.propos__link {
   text-decoration: none;
   color: #000;
-}
-.homepage .homepage__cards .card .fa-solid.fa-arrow-up-right-from-square {
-  position: relative;
-  left: 10px;
-  color: #000;
-  cursor: pointer;
 }
 .homepage .homepage__cards .card .propos {
   font-size: 0.9rem;
   text-align: left;
   display: flex;
+  transition: transform 0.3s ease, font-size 0.3s ease;
+  cursor: pointer;
+}
+.homepage .github,
+.homepage .linkedin,
+.homepage .mail,
+.homepage .phone {
+  cursor: pointer;
 }
 .homepage .github {
-  position: relative;
   left: -35px;
-  cursor: pointer;
 }
 .homepage .linkedin {
-  position: relative;
   left: 30px;
-  cursor: pointer;
 }
-.homepage .mail {
-  border: 1px solid #000;
-  border-radius: 35px;
-  margin-bottom: 30px;
-}
-.homepage .mail .contact__link {
-  position: relative;
-  left: 45px;
-  color: #000;
-  cursor: pointer;
-}
+.homepage .mail,
 .homepage .phone {
   border: 1px solid #000;
   border-radius: 35px;
+  margin-bottom: 20px;
 }
+.homepage .mail .contact__link,
+.homepage .mail .contact_phone__link,
+.homepage .phone .contact__link,
 .homepage .phone .contact_phone__link {
-  position: relative;
-  left: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #000;
   cursor: pointer;
 }
-.homepage .contact__link, .homepage .contact_phone__link {
+.homepage .phone .contact_phone__link {
+  position: relative;
+  left: 95px;
+}
+.homepage .contact__link,
+.homepage .contact_phone__link {
   margin-left: 10px;
   color: inherit;
   text-decoration: none;
@@ -161,11 +161,24 @@ p.footer__text {
 .homepage .contact_phone__link {
   background: none;
   border: none;
-  color: inherit;
   font: inherit;
-  cursor: pointer;
   display: inline;
   padding: 0;
+}
+@media (min-width: 768px) {
+  .homepage .homepage__cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  .homepage .homepage__profession {
+    margin-bottom: 50px;
+  }
+  .homepage .mail,
+  .homepage .phone {
+    margin-bottom: 30px;
+  }
+  .homepage .phone .contact_phone__link {
+    left: 0;
+  }
 }
 
 .aboutpage {
@@ -173,7 +186,7 @@ p.footer__text {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #cc790d;
+  background-color: #f1efe9;
 }
 
 .card_about {

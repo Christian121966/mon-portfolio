@@ -22,9 +22,9 @@ function Header() {
         <button onClick={() => changeLanguage('fr')}>FR</button>
       </div>
       <nav className="header__nav">
-        <a href="/" className="header__link">Home</a>
-        <a href="/about" className="header__link">About</a>
-        <a href="/projects" className="header__link">Projects</a>
+        <a href="/" className="header__link">Accueil</a>
+        <a href="/about" className="header__link">A Propos</a>
+        <a href="/projects" className="header__link">Projets</a>
         <a href="/contact" className="header__link">Contact</a>
       </nav>
     </header>

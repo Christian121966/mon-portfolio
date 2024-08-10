@@ -1,101 +1,163 @@
+@charset "UTF-8";
 .homepage {
   padding: 20px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
 }
 .homepage h1 {
   text-align: center;
+  color: #083344;
 }
-.homepage .homepage__name {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.homepage header {
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-color: #E2DED1;
+  transform: scale(0); /* Initialement, le header est rétréci */
+  opacity: 0; /* Initialement, le header est invisible */
+  animation: zoomIn 3s ease-in-out forwards;
+  animation-delay: 0s; /* Le header s'anime immédiatement */
 }
+.homepage .homepage__name,
 .homepage .homepage__profession {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  color: #083344;
+  font-weight: 500;
+}
+.homepage .homepage__profession {
+  margin-bottom: 30px;
 }
 .homepage .homepage__cards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr; /* Par défaut, une seule colonne pour mobile (320px) */
   gap: 20px;
   margin-top: 20px;
 }
-@media (max-width: 768px) {
-  .homepage .homepage__cards {
-    grid-template-columns: 1fr;
-  }
-}
-.homepage .homepage__cards .card {
-  background-color: #E2DED1;
+.homepage .card {
+  background-color: #E2DED1; /* Couleur des cartes */
   border: 1px solid #000;
   border-radius: 10px;
-  padding: 20px;
+  padding: 15px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
+  transform: scale(0); /* Initialement, les cartes sont rétrécies */
+  opacity: 0; /* Initialement, les cartes sont invisibles */
+  animation: zoomIn 3s ease-in-out forwards;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
-.homepage .homepage__cards .card h3 {
-  margin-bottom: 30px;
+.homepage .card:nth-child(1) {
+  animation-delay: 3s; /* La 1ère carte commence après 3s (fin de l'animation du header) */
+}
+.homepage .card:nth-child(2) {
+  animation-delay: 6s; /* La 2ème carte commence après 6s (3s après la 1ère carte) */
+}
+.homepage .card:nth-child(3) {
+  animation-delay: 9s; /* La 3ème carte commence après 9s (3s après la 2ème carte) */
+}
+.homepage .card:nth-child(4) {
+  animation-delay: 12s; /* La 4ème carte commence après 12s (3s après la 3ème carte) */
+}
+.homepage .card:nth-child(5) { /* Ajout de la carte "Contact" */
+  animation-delay: 15s; /* La carte Contact commence après 15s (3s après la 4ème carte) */
+}
+@keyframes zoomIn {
+  0% {
+    transform: scale(0); /* Elément rétréci */
+    opacity: 0; /* Elément invisible */
+  }
+  100% {
+    transform: scale(1); /* Elément à sa taille normale */
+    opacity: 1; /* Elément visible */
+  }
+}
+.homepage h2 {
+  color: #65a30d;
+}
+.homepage h3 {
+  margin-bottom: 20px;
   border: 1px solid #000;
   border-radius: 35px;
 }
-.homepage .homepage__cards .card a.propos__link {
+.homepage a.formation__link,
+.homepage a.propos__link {
   text-decoration: none;
-  color: #000;
+  color: #65a30d;
 }
-.homepage .homepage__cards .card .fa-solid.fa-arrow-up-right-from-square {
-  position: relative;
-  left: 10px;
-  color: #000;
-  cursor: pointer;
-}
-.homepage .homepage__cards .card .propos {
+.homepage .propos {
   font-size: 0.9rem;
   text-align: left;
   display: flex;
+  transition: transform 0.3s ease, font-size 0.3s ease;
+  cursor: pointer;
 }
-.homepage .github {
-  position: relative;
+
+.github,
+.linkedin,
+.mail,
+.phone {
+  cursor: pointer;
+}
+
+.github {
   left: -35px;
-  cursor: pointer;
 }
-.homepage .linkedin {
-  position: relative;
+
+.linkedin {
   left: 30px;
-  cursor: pointer;
 }
-.homepage .mail {
+
+.mail,
+.phone {
   border: 1px solid #000;
   border-radius: 35px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
-.homepage .mail .contact__link {
-  position: relative;
-  left: 45px;
-  color: #000;
+.mail .contact__link,
+.mail .contact_phone__link,
+.phone .contact__link,
+.phone .contact_phone__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #083344;
+  font-weight: 600;
   cursor: pointer;
 }
-.homepage .phone {
-  border: 1px solid #000;
-  border-radius: 35px;
-}
-.homepage .phone .contact_phone__link {
+
+.phone .contact_phone__link {
   position: relative;
-  left: 55px;
-  color: #000;
-  cursor: pointer;
+  left: 95px;
 }
-.homepage .contact__link, .homepage .contact_phone__link {
+
+.contact__link,
+.contact_phone__link {
   margin-left: 10px;
   color: inherit;
   text-decoration: none;
 }
-.homepage .contact_phone__link {
+
+.contact_phone__link {
   background: none;
   border: none;
-  color: inherit;
   font: inherit;
-  cursor: pointer;
   display: inline;
   padding: 0;
+}
+
+@media (min-width: 768px) {
+  .homepage__cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  .homepage__profession {
+    margin-bottom: 50px;
+  }
+  .mail,
+  .phone {
+    margin-bottom: 30px;
+  }
+  .phone .contact_phone__link {
+    left: 0;
+  }
 }/*# sourceMappingURL=HomePage.css.map */
