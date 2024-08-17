@@ -14,7 +14,7 @@
   }
 
   &__link {
-    color: #083344;
+    color: darkgreen;
     text-decoration: none;
     font-weight: 600;
 
@@ -26,8 +26,10 @@
   /* src/components/Header/Header.scss */
 
 .header__language-buttons {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .control__lang {

@@ -60,19 +60,19 @@
     }
     
     .card:nth-child(2) {
-        animation-delay: 6s; /* La 2ème carte commence après 6s (3s après la 1ère carte) */
+        animation-delay: 4s; /* La 2ème carte commence après 6s (3s après la 1ère carte) */
     }
     
     .card:nth-child(3) {
-        animation-delay: 9s; /* La 3ème carte commence après 9s (3s après la 2ème carte) */
+        animation-delay: 5s; /* La 3ème carte commence après 9s (3s après la 2ème carte) */
     }
     
     .card:nth-child(4) {
-        animation-delay: 12s; /* La 4ème carte commence après 12s (3s après la 3ème carte) */
+        animation-delay: 6s; /* La 4ème carte commence après 12s (3s après la 3ème carte) */
     }
 
     .card:nth-child(5) { /* Ajout de la carte "Contact" */
-        animation-delay: 15s; /* La carte Contact commence après 15s (3s après la 4ème carte) */
+        animation-delay: 7s; /* La carte Contact commence après 15s (3s après la 4ème carte) */
     }
     
     @keyframes zoomIn {
